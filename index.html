@@ -1,0 +1,1817 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f1ea" />
+    <title>Вайбкодинг — интенсив</title>
+    <meta
+      name="description"
+      content="Интерактивный конспект интенсива по вайбкодингу с ИИ"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260702-6" />
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <header class="hero" id="start">
+      <nav class="nav shell" aria-label="Навигация по уроку">
+        <div class="nav-links">
+          <a href="#start">Старт</a>
+          <a href="#what">Что это</a>
+          <a href="#tools">Инструменты</a>
+          <a href="#compare">Сравнение</a>
+          <a href="#possibilities">Что создать</a>
+          <a href="#brief">Практика</a>
+          <a href="#auth">Авторизация</a>
+          <a href="#hosting">Хостинг</a>
+        </div>
+      </nav>
+
+      <div class="hero-content shell">
+        <div class="eyebrow"><span></span> Практический урок by Polinext Production</div>
+        <h1>Создаём сайты,<br />приложения и сервисы <em>при помощи вайбкодинга</em></h1>
+        <div class="hero-bottom">
+          <p>
+            Сегодня разберёмся, что такое вайбкодинг, чем отличаются
+            AI-инструменты и начнём создавать собственный проект в Codex.
+          </p>
+          <a class="round-button" href="#what" aria-label="Начать урок">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 5v14M6 13l6 6 6-6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section definition-section" id="what">
+        <div class="shell">
+          <div class="section-heading">
+            <span class="section-number">01</span>
+            <p>Начнём с главного</p>
+          </div>
+          <div class="definition-grid">
+            <h2>Что такое<br /><span>вайбкодинг?</span></h2>
+            <div class="definition-copy">
+              <p class="lead">
+                Вайбкодинг — это способ создавать сайты, приложения и сервисы
+                с помощью ИИ, не зная программирование на глубоком уровне.
+              </p>
+              <p>
+                Вы описываете идею обычными словами, а AI-помощник превращает
+                её в работающий код. Ваша задача — поставить цель, дать контекст
+                и проверить результат.
+              </p>
+              <div class="formula" aria-label="Формула вайбкодинга">
+                <span>Ваша идея</span><i>+</i><span>ИИ-агент</span><i>=</i
+                ><strong>Готовый продукт</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tools-section" id="tools">
+        <div class="shell">
+          <div class="section-heading light">
+            <span class="section-number">02</span>
+            <p>Где можно вайбкодить</p>
+          </div>
+          <div class="section-title-row">
+            <h2>Популярные<br />инструменты</h2>
+            <p>
+              Оба инструмента умеют работать с кодом, но подходят к задаче
+              немного по-разному.
+            </p>
+          </div>
+
+          <div class="tool-table" role="table" aria-label="Сравнение инструментов">
+            <div class="table-row table-head" role="row">
+              <span role="columnheader">Инструмент</span>
+              <span role="columnheader">Для чего лучше всего</span>
+              <span role="columnheader">Кому подходит</span>
+            </div>
+            <div class="table-row codex-row" role="row">
+              <div class="tool-name" role="cell">
+                <span class="mini-logo openai-logo">◎</span>
+                <div><b>Codex</b><small>OpenAI</small></div>
+              </div>
+              <p role="cell">
+                Полноценная разработка, работа с существующим проектом, GitHub,
+                исправление ошибок
+              </p>
+              <p role="cell">Тем, кто делает реальные продукты</p>
+            </div>
+            <div class="table-row claude-row" role="row">
+              <div class="tool-name" role="cell">
+                <span class="mini-logo claude-logo">✳</span>
+                <div><b>Claude Code</b><small>Anthropic</small></div>
+              </div>
+              <p role="cell">
+                Архитектура, чистый код и рефакторинг больших проектов
+              </p>
+              <p role="cell">Тем, кто уже немного работает с кодом</p>
+            </div>
+          </div>
+
+          <div class="today-note">
+            <span>Сегодня работаем здесь</span>
+            <b>Codex</b>
+            <svg viewBox="0 0 80 30" aria-hidden="true">
+              <path d="M2 25C23 4 49 3 77 15M67 8l10 7-11 5" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compare-section" id="compare">
+        <div class="shell">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <p>Разбираемся наглядно</p>
+          </div>
+          <h2 class="compare-title">Чем отличается<br />Codex от Claude Code?</h2>
+
+          <div class="ecosystems">
+            <article class="ecosystem ecosystem-openai">
+              <div class="company-mark">
+                <span class="large-logo">◎</span>
+                <div><b>OpenAI</b><small>AI-модель</small></div>
+              </div>
+              <div class="flow-arrow">
+                <span></span>
+                <small>работает через</small>
+              </div>
+              <div class="product-mark codex-mark">
+                <span>&gt;_</span>
+                <div><b>Codex</b><small>AI-агент</small></div>
+              </div>
+            </article>
+
+            <article class="ecosystem ecosystem-anthropic">
+              <div class="company-mark">
+                <span class="large-logo">✳</span>
+                <div><b>Anthropic</b><small>AI-модель Claude</small></div>
+              </div>
+              <div class="flow-arrow">
+                <span></span>
+                <small>работает через</small>
+              </div>
+              <div class="product-mark claude-code-mark">
+                <span>CLI</span>
+                <div><b>Claude Code</b><small>AI-агент</small></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="comparison-cards">
+            <article class="compare-card codex-card">
+              <div class="card-topline">
+                <div><span>01</span><h3>Codex</h3></div>
+                <small>OpenAI</small>
+              </div>
+              <p class="card-thesis">
+                Самостоятельный агент, который может пройти весь путь от задачи
+                до работающего результата.
+              </p>
+              <h4>Сильные стороны</h4>
+              <ul>
+                <li>Выполняет цепочку задач самостоятельно</li>
+                <li>Хорошо работает с GitHub</li>
+                <li>Запускает терминальные команды</li>
+                <li>Находит и исправляет ошибки</li>
+                <li>Подходит для больших проектов</li>
+                <li>Понимает бизнес-логику</li>
+              </ul>
+            </article>
+
+            <article class="compare-card claude-card">
+              <div class="card-topline">
+                <div><span>02</span><h3>Claude Code</h3></div>
+                <small>Anthropic</small>
+              </div>
+              <p class="card-thesis">
+                Больше похож на очень сильного senior-разработчика: аккуратного,
+                вдумчивого и внимательного к структуре.
+              </p>
+              <h4>Сильные стороны</h4>
+              <ul>
+                <li>Пишет красивый и чистый код</li>
+                <li>Выстраивает отличную архитектуру</li>
+                <li>Качественно рефакторит</li>
+                <li>Подробно объясняет свои действия</li>
+                <li>Работает с огромными проектами</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="takeaway">
+            <span>Главная мысль</span>
+            <p>
+              <strong>Codex</strong> — когда нужно сделать продукт.
+              <strong class="no-break">Claude Code</strong> — когда нужно особенно тщательно
+              проработать код и архитектуру.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section possibilities-section" id="possibilities">
+        <div class="shell">
+          <div class="section-heading light">
+            <span class="section-number">04</span>
+            <p>От идеи к своему продукту</p>
+          </div>
+
+          <div class="possibilities-intro">
+            <h2>Что можно<br />создать <span>с Codex?</span></h2>
+            <p>
+              Почти любой цифровой продукт можно начать с понятного запроса.
+              Выберите формат — Codex поможет продумать интерфейс, написать код,
+              подключить функции и довести проект до рабочей версии.
+            </p>
+          </div>
+
+          <div class="idea-tabs" role="tablist" aria-label="Форматы проектов">
+            <button
+              class="idea-tab is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="mini-apps"
+              id="tab-mini-apps"
+              data-idea-tab="mini-apps"
+            >
+              <span>01</span> Telegram Mini Apps
+            </button>
+            <button
+              class="idea-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="ai-services"
+              id="tab-ai-services"
+              data-idea-tab="ai-services"
+            >
+              <span>02</span> AI-сервисы
+            </button>
+            <button
+              class="idea-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="websites"
+              id="tab-websites"
+              data-idea-tab="websites"
+            >
+              <span>03</span> Сайты
+            </button>
+          </div>
+
+          <div
+            class="idea-panel"
+            id="mini-apps"
+            role="tabpanel"
+            aria-labelledby="tab-mini-apps"
+          >
+            <div class="panel-heading">
+              <div class="panel-icon">TG</div>
+              <div>
+                <p>Приложение прямо внутри Telegram</p>
+                <h3>Telegram Mini Apps</h3>
+              </div>
+              <span class="panel-count">5 идей</span>
+            </div>
+            <div class="idea-grid">
+              <article class="idea-card featured">
+                <span class="idea-index">01</span>
+                <div class="idea-symbol">👥</div>
+                <h4>Кабинет сотрудника</h4>
+                <p>
+                  График, документы, заявки на отпуск, новости команды и связь
+                  с HR — в одном приложении.
+                </p>
+                <span class="idea-tag">Для компании</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">02</span>
+                <div class="idea-symbol">✦</div>
+                <h4>Клуб лояльности</h4>
+                <p>
+                  Баллы, персональные предложения, запись на услуги и история
+                  покупок для клиентов бренда.
+                </p>
+                <span class="idea-tag">Для бизнеса</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">03</span>
+                <div class="idea-symbol">⌁</div>
+                <h4>Помощник мероприятия</h4>
+                <p>
+                  Программа, карта площадки, билеты, знакомства участников и
+                  моментальные уведомления.
+                </p>
+                <span class="idea-tag">Для событий</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">04</span>
+                <div class="idea-symbol">⌂</div>
+                <h4>Подбор недвижимости</h4>
+                <p>
+                  Мини-анкета, подходящие объекты, расчёт платежа и быстрая
+                  запись на просмотр.
+                </p>
+                <span class="idea-tag">Для продаж</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">05</span>
+                <div class="idea-symbol">✓</div>
+                <h4>Трекер заказов</h4>
+                <p>
+                  Статусы проекта, согласование этапов, файлы и оплата для
+                  клиентов студии или фрилансера.
+                </p>
+                <span class="idea-tag">Для услуг</span>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="idea-panel"
+            id="ai-services"
+            role="tabpanel"
+            aria-labelledby="tab-ai-services"
+            hidden
+          >
+            <div class="panel-heading">
+              <div class="panel-icon">AI</div>
+              <div>
+                <p>Сервисы, которые думают вместе с человеком</p>
+                <h3>Полезные AI-сервисы</h3>
+              </div>
+              <span class="panel-count">5 идей</span>
+            </div>
+            <div class="idea-grid">
+              <article class="idea-card featured orange">
+                <span class="idea-index">01</span>
+                <div class="idea-symbol">◐</div>
+                <h4>AI-стилист</h4>
+                <p>
+                  Анализирует фото, предлагает образы под задачу и помогает
+                  подобрать вещи из каталога.
+                </p>
+                <span class="idea-tag">Для fashion</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">02</span>
+                <div class="idea-symbol">✎</div>
+                <h4>Контент-планер</h4>
+                <p>
+                  Создаёт идеи, рубрики и черновики постов на основе ниши, цели
+                  и голоса бренда.
+                </p>
+                <span class="idea-tag">Для экспертов</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">03</span>
+                <div class="idea-symbol">▤</div>
+                <h4>Конструктор резюме</h4>
+                <p>
+                  Превращает опыт человека в сильное резюме, сопроводительное
+                  письмо и персональную страницу.
+                </p>
+                <span class="idea-tag">Для карьеры</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">04</span>
+                <div class="idea-symbol">≡</div>
+                <h4>Переводчик документов</h4>
+                <p>
+                  Объясняет сложные договоры и инструкции простыми словами,
+                  выделяет главное и собирает чек-лист.
+                </p>
+                <span class="idea-tag">Для жизни</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">05</span>
+                <div class="idea-symbol">⌖</div>
+                <h4>Умный планировщик поездки</h4>
+                <p>
+                  Строит маршрут по бюджету и интересам, собирает места, даты и
+                  план каждого дня.
+                </p>
+                <span class="idea-tag">Для путешествий</span>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="idea-panel"
+            id="websites"
+            role="tabpanel"
+            aria-labelledby="tab-websites"
+            hidden
+          >
+            <div class="panel-heading">
+              <div class="panel-icon">WWW</div>
+              <div>
+                <p>Публичная точка входа в ваш продукт</p>
+                <h3>Сайты</h3>
+              </div>
+              <span class="panel-count">5 идей</span>
+            </div>
+            <div class="idea-grid">
+              <article class="idea-card featured acid">
+                <span class="idea-index">01</span>
+                <div class="idea-symbol">→</div>
+                <h4>Лендинг эксперта</h4>
+                <p>
+                  Упаковывает услуги, кейсы и отзывы, отвечает на вопросы и
+                  приводит клиента к заявке.
+                </p>
+                <span class="idea-tag">Для личного бренда</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">02</span>
+                <div class="idea-symbol">▶</div>
+                <h4>Онлайн-школа</h4>
+                <p>
+                  Программа курса, личный кабинет, уроки, домашние задания и
+                  отслеживание прогресса.
+                </p>
+                <span class="idea-tag">Для обучения</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">03</span>
+                <div class="idea-symbol">◇</div>
+                <h4>Каталог бренда</h4>
+                <p>
+                  Красиво показывает коллекцию, помогает выбрать товар и
+                  переводит к покупке или консультации.
+                </p>
+                <span class="idea-tag">Для продукта</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">04</span>
+                <div class="idea-symbol">●</div>
+                <h4>Сайт мероприятия</h4>
+                <p>
+                  Анонс, программа, спикеры, регистрация и ответы на все вопросы
+                  участников.
+                </p>
+                <span class="idea-tag">Для запуска</span>
+              </article>
+              <article class="idea-card">
+                <span class="idea-index">05</span>
+                <div class="idea-symbol">▦</div>
+                <h4>Корпоративный сайт</h4>
+                <p>
+                  Рассказывает о компании и команде, показывает кейсы, собирает
+                  вакансии и обращения клиентов.
+                </p>
+                <span class="idea-tag">Для компании</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="possibilities-takeaway">
+            <span>Важно</span>
+            <p>
+              Не обязательно сразу строить огромный сервис. Начните с
+              <strong>одной полезной функции</strong> — и превратите её в первую
+              рабочую версию продукта.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section brief-section" id="brief">
+        <div class="shell">
+          <div class="section-heading">
+            <span class="section-number">05</span>
+            <p>Практика: что создаём</p>
+          </div>
+
+          <div class="brief-intro">
+            <h2>Создаём проекты<br /><span>с Codex</span></h2>
+            <div>
+              <p>
+                Codex может собрать Telegram Mini App, обычный сайт или
+                AI‑сервис. Принцип один: сначала описываем фундамент проекта,
+                затем добавляем данные, авторизацию, оплату, интеграции и
+                подготовку к запуску.
+              </p>
+              <strong>Выберите формат и возьмите базу для первого запроса.</strong>
+            </div>
+          </div>
+
+          <div class="brief-tabs" role="tablist" aria-label="Формат проекта">
+            <button
+              class="brief-tab is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-brief-tab="brief-miniapp"
+            >
+              <span>01</span> Telegram Mini App
+            </button>
+            <button
+              class="brief-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-brief-tab="brief-website"
+            >
+              <span>02</span> Сайт
+            </button>
+            <button
+              class="brief-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-brief-tab="brief-ai-service"
+            >
+              <span>03</span> AI‑сервис
+            </button>
+          </div>
+
+          <div class="prompt-formula" aria-label="Формула хорошего запроса">
+            <div><span>01</span><b>Идея</b><small>что и зачем</small></div>
+            <i>→</i>
+            <div><span>02</span><b>Люди</b><small>пользователи и роли</small></div>
+            <i>→</i>
+            <div><span>03</span><b>Сценарий</b><small>экраны и действия</small></div>
+            <i>→</i>
+            <div><span>04</span><b>Основа</b><small>данные и интеграции</small></div>
+            <i>→</i>
+            <div><span>05</span><b>Финал</b><small>дизайн, тест и запуск</small></div>
+          </div>
+
+          <div class="brief-panel miniapp-brief-panel" id="brief-miniapp">
+            <aside class="brief-checklist">
+              <span class="brief-kind">Telegram Mini App</span>
+              <h3>Что нужно упомянуть</h3>
+              <ol>
+                <li><b>Контекст:</b> для какого проекта или бизнеса</li>
+                <li><b>Пользователи:</b> кто зайдёт и какие будут роли</li>
+                <li><b>Задача:</b> какую проблему решает приложение</li>
+                <li><b>Сценарий:</b> путь человека от входа до результата</li>
+                <li><b>Экраны:</b> главная, профиль, каталог и другие</li>
+                <li><b>Функции:</b> что можно посмотреть или сделать</li>
+                <li><b>Данные:</b> что сохраняем и откуда получаем</li>
+                <li><b>Визуал:</b> стиль, цвета, референсы и тон</li>
+              </ol>
+              <p class="brief-tip">
+                Не знаете технические детали? Оставьте выбор технологий Codex,
+                но подробно опишите логику продукта и желаемый результат.
+              </p>
+            </aside>
+
+            <div class="prompt-template">
+              <div class="template-header">
+                <div>
+                  <span>Как лучше писать</span>
+                  <h3>Сильное ТЗ лучше разделить на 2–3 запроса</h3>
+                </div>
+              </div>
+
+              <div class="prompt-split-note">
+                <b>Почему не одним сообщением?</b>
+                <span>
+                  Если отправить слишком длинное ТЗ сразу, Codex может дольше
+                  думать, упустить часть деталей или начать делать лишнее.
+                  Лучше сначала собрать фундамент, а потом добавлять всё, что
+                  находится “сверх фундамента”: авторизацию, оплату, CRM,
+                  Google Sheets, дизайн и хостинг.
+                </span>
+              </div>
+
+              <div class="prompt-parts">
+                <article class="prompt-part">
+                  <div class="prompt-part-head">
+                    <span>Запрос 01</span>
+                    <h4>Фундамент и первая рабочая версия</h4>
+                    <button class="copy-button" type="button" data-copy="app-brief-prompt-1">
+                      Скопировать
+                    </button>
+                  </div>
+                  <blockquote class="brief-prompt" id="app-brief-prompt-1">
+                    <p>
+                      <b>Ты — продуктовый дизайнер и full-stack разработчик.</b>
+                      Создай полноценный Telegram Mini App
+                      <mark>[название или тема приложения]</mark>.
+                    </p>
+                    <p>
+                      <b>Контекст и цель.</b> Приложение создаётся для
+                      <mark>[компания / эксперт / сообщество / проект]</mark>.
+                      Его цель — помочь <mark>[кому]</mark>
+                      <mark>[решить задачу или получить результат]</mark>.
+                    </p>
+                    <p>
+                      <b>Пользователи и роли.</b> Основные пользователи:
+                      <mark>[клиенты / сотрудники / участники / администраторы]</mark>.
+                      Предусмотри роли <mark>[перечислить роли]</mark>.
+                    </p>
+                    <p>
+                      <b>Главный сценарий.</b> После входа человек должен:
+                      <mark>[шаг 1]</mark> → <mark>[шаг 2]</mark> →
+                      <mark>[шаг 3 — конечный результат]</mark>. Сделай путь
+                      коротким, понятным и без лишних действий.
+                    </p>
+                    <p>
+                      <b>Экраны и функции.</b> Нужны:
+                      <mark>[главная]</mark>, <mark>[каталог или список]</mark>,
+                      <mark>[карточка объекта]</mark>, <mark>[профиль]</mark>,
+                      <mark>[заявки / история / избранное]</mark>. Пользователь
+                      может <mark>[просматривать / искать / создавать заявку / редактировать данные]</mark>.
+                    </p>
+                    <p>
+                      <b>Важно:</b> сначала создай простую первую версию без
+                      сложных интеграций. Запусти проект, проверь основной
+                      сценарий и исправь ошибки.
+                    </p>
+                  </blockquote>
+                </article>
+
+                <article class="prompt-part">
+                  <div class="prompt-part-head">
+                    <span>Запрос 02</span>
+                    <h4>Данные, авторизация и интеграции</h4>
+                    <button class="copy-button" type="button" data-copy="app-brief-prompt-2">
+                      Скопировать
+                    </button>
+                  </div>
+                  <div class="prompt-optional-note">
+                    <b>Этот запрос можно пока пропустить.</b> Отправляйте его,
+                    если у вас уже есть что подключать: CRM, Google Таблица,
+                    платёжная система, база сотрудников, онлайн‑школа или API.
+                    Если этого пока нет — переходите сразу к запросу 03. Позже,
+                    когда нужные сервисы появятся, вы вернётесь к этому этапу и
+                    попросите Codex подключить их к проекту.
+                  </div>
+                  <blockquote class="brief-prompt" id="app-brief-prompt-2">
+                    <p>
+                      Теперь добавь логику данных и доступа. Опиши, как
+                      приложение понимает, кто зашёл: через
+                      <mark>[Telegram ID / внутренний ID сотрудника / номер телефона / почту / SSO]</mark>.
+                    </p>
+                    <p>
+                      <b>Если это приложение для сотрудников:</b> проверь
+                      пользователя по Google Sheet, CRM или базе сотрудников и
+                      покажи только его данные.
+                    </p>
+                    <p>
+                      <b>Если это магазин или открытый сервис:</b> создай форму
+                      регистрации. Пользователь может ввести email, телефон или
+                      открыть Mini App через Telegram. Новые данные пользователя
+                      должны сохраняться в <mark>[Google Sheets / CRM / базе данных]</mark>.
+                    </p>
+                    <p>
+                      <b>Если нужен код подтверждения:</b> объясни, кто его
+                      отправляет — backend через email-сервис, SMS-сервис или
+                      Telegram-бота.
+                    </p>
+                    <p>
+                      <b>API простыми словами:</b> API — это “мостик” между
+                      приложением и другим сервисом. Попроси Codex подключить
+                      <mark>[Google Sheets / CRM / онлайн-школу / склад / рассылки / AI]</mark>,
+                      чтобы приложение само брало оттуда данные или отправляло
+                      туда новые заявки.
+                    </p>
+                    <p>
+                      <b>Оплата:</b> если есть покупка, добавь кнопку
+                      <mark>[Купить / Оплатить / Заказать]</mark> и подключи
+                      готовую платёжную ссылку
+                      <mark>[Robokassa / Stripe / ЮKassa / CloudPayments / GetCourse]</mark>.
+                    </p>
+                  </blockquote>
+                </article>
+
+                <article class="prompt-part">
+                  <div class="prompt-part-head">
+                    <span>Запрос 03</span>
+                    <h4>Телефонный формат, дизайн и подготовка к запуску</h4>
+                    <button class="copy-button" type="button" data-copy="app-brief-prompt-3">
+                      Скопировать
+                    </button>
+                  </div>
+                  <blockquote class="brief-prompt" id="app-brief-prompt-3">
+                    <p>
+                      Проверь, что это именно формат приложения на телефон:
+                      <mark>mobile-first Telegram Mini App</mark>, а не обычная
+                      desktop-страница для ПК.
+                    </p>
+                    <p>
+                      Если интерфейс получился слишком широким или похожим на
+                      сайт для компьютера, исправь его: сделай узкую мобильную
+                      ширину, крупные кнопки, удобные поля ввода и навигацию
+                      под экран телефона.
+                    </p>
+                    <p>
+                      <b>Дизайн и UX.</b> Стиль:
+                      <mark>[современный / минималистичный / премиальный / яркий]</mark>.
+                      Цвета: <mark>[палитра]</mark>. Референсы:
+                      <mark>[ссылки или описание]</mark>. Интерфейс должен быть
+                      удобным внутри Telegram.
+                    </p>
+                    <p>
+                      Используй Telegram WebApp SDK, учитывай светлую и тёмную
+                      тему Telegram, не оставляй неработающих кнопок и
+                      демонстрационных заглушек в основном сценарии.
+                    </p>
+                    <p>
+                      В финале подготовь проект для GitHub и хостинга, добавь
+                      понятный README и кратко напиши: что реализовано, как
+                      запустить приложение и что логично добавить во второй
+                      версии.
+                    </p>
+                  </blockquote>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="brief-panel" id="brief-website" hidden>
+            <aside class="brief-checklist">
+              <span class="brief-kind">Сайт</span>
+              <h3>Что нужно упомянуть</h3>
+              <ol>
+                <li><b>Цель:</b> продать, записать, объяснить или собрать заявку</li>
+                <li><b>Аудитория:</b> кто заходит на сайт и что ему важно</li>
+                <li><b>Структура:</b> какие блоки и страницы нужны</li>
+                <li><b>Контент:</b> оффер, тексты, фото, кейсы, FAQ</li>
+                <li><b>Действие:</b> заявка, оплата, запись, переход в Telegram</li>
+                <li><b>Данные:</b> куда уходят формы и заявки</li>
+                <li><b>Дизайн:</b> стиль, референсы, цвета, адаптивность</li>
+                <li><b>Запуск:</b> GitHub, хостинг, домен и аналитика</li>
+              </ol>
+              <p class="brief-tip">
+                Для сайта особенно важно сразу сказать, что должно произойти
+                после нажатия кнопки: заявка в CRM, письмо на почту, оплата или
+                переход в мессенджер.
+              </p>
+            </aside>
+
+            <div class="prompt-template">
+              <div class="template-header">
+                <div>
+                  <span>Как лучше писать</span>
+                  <h3>Сайт тоже лучше собирать в 2–3 запроса</h3>
+                </div>
+              </div>
+
+              <div class="prompt-parts">
+                <article class="prompt-part">
+                  <div class="prompt-part-head">
+                    <span>Запрос 01</span>
+                    <h4>Структура и первая версия сайта</h4>
+                    <button class="copy-button" type="button" data-copy="website-brief-prompt-1">
+                      Скопировать
+                    </button>
+                  </div>
+                  <blockquote class="brief-prompt" id="website-brief-prompt-1">
+                    <p>
+                      <b>Ты — веб-дизайнер, маркетолог и full-stack разработчик.</b>
+                      Создай современный адаптивный сайт для
+                      <mark>[бренд / эксперт / компания / продукт]</mark>.
+                    </p>
+                    <p>
+                      <b>Цель сайта:</b> <mark>[продать / собрать заявки / объяснить услугу / записать на консультацию]</mark>.
+                      Основная аудитория: <mark>[кто эти люди]</mark>.
+                    </p>
+                    <p>
+                      <b>Структура:</b> сделай блоки
+                      <mark>[главный экран]</mark>, <mark>[о продукте]</mark>,
+                      <mark>[для кого]</mark>, <mark>[преимущества]</mark>,
+                      <mark>[кейсы / отзывы]</mark>, <mark>[тарифы]</mark>,
+                      <mark>[FAQ]</mark>, <mark>[форма заявки]</mark>.
+                    </p>
+                    <p>
+                      <b>Первый результат:</b> собери рабочую HTML/CSS/JS‑версию,
+                      проверь мобильную адаптацию и не оставляй пустых кнопок.
+                    </p>
+                  </blockquote>
+                </article>
+
+                <article class="prompt-part">
+                  <div class="prompt-part-head">
+                    <span>Запрос 02</span>
+                    <h4>Данные, формы, заявки и интеграции</h4>
+                    <button class="copy-button" type="button" data-copy="website-brief-prompt-2">
+                      Скопировать
+                    </button>
+                  </div>
+                  <div class="prompt-optional-note">
+                    <b>Этот запрос по желанию.</b> Он нужен, если вы прямо сейчас
+                    можете дать Codex реальные данные для подключения: CRM,
+                    Google Таблицу, email‑сервис, платёжную систему, webhook,
+                    базу данных или доступ к форме заявок. Если этого пока нет —
+                    спокойно пропускайте запрос 02 и переходите к запросу 03.
+                    Формы, оплату и CRM можно добавить позже.
+                  </div>
+                  <blockquote class="brief-prompt" id="website-brief-prompt-2">
+                    <p>
+                      Теперь добавь логику данных, заявок и доступа. Опиши, как
+                      сайт понимает, кто оставил заявку или вошёл в личный кабинет:
+                      через <mark>[email / телефон / Telegram / логин и пароль / SSO]</mark>.
+                    </p>
+                    <p>
+                      <b>Если это лендинг без личного кабинета:</b> сделай форму
+                      заявки. Пользователь вводит
+                      <mark>[имя / телефон / email / Telegram / комментарий]</mark>,
+                      а данные автоматически уходят в
+                      <mark>[CRM / Google Sheets / email / базу данных]</mark>.
+                    </p>
+                    <p>
+                      <b>Если это сайт с личным кабинетом:</b> добавь регистрацию
+                      и вход. Пользователь может создать аккаунт по
+                      <mark>[email / телефону / логину и паролю]</mark>. Новые
+                      данные пользователя должны сохраняться в
+                      <mark>[базе данных / CRM]</mark>, а не только на странице сайта.
+                    </p>
+                    <p>
+                      <b>Если нужен код подтверждения:</b> объясни, кто его
+                      отправляет — backend через email‑сервис, SMS‑сервис или
+                      Telegram‑бота. Не делай вид, что код появляется сам по себе.
+                    </p>
+                    <p>
+                      <b>API простыми словами:</b> API — это “мостик” между
+                      сайтом и другим сервисом. Попроси Codex подключить
+                      <mark>[CRM / Google Sheets / онлайн‑школу / склад / рассылки / AI]</mark>,
+                      чтобы сайт сам отправлял туда заявки, подтягивал статусы,
+                      открывал уроки или обновлял данные.
+                    </p>
+                    <p>
+                      <b>Оплата:</b> если на сайте есть покупка, добавь кнопку
+                      <mark>[Купить / Оплатить / Записаться]</mark> и подключи
+                      готовую платёжную ссылку из
+                      <mark>[ЮKassa / Robokassa / CloudPayments / GetCourse / Stripe]</mark>.
+                    </p>
+                    <p>
+                      Если конкретные технологии пока не указаны, выбери простое
+                      и надёжное решение для первой версии и напиши, что понадобится
+                      для полноценного подключения: API‑ключ, webhook, доступ к
+                      CRM, таблице, базе данных или платёжной системе.
+                    </p>
+                  </blockquote>
+                </article>
+
+                <article class="prompt-part">
+                  <div class="prompt-part-head">
+                    <span>Запрос 03</span>
+                    <h4>Адаптивность, дизайн и подготовка к запуску</h4>
+                    <button class="copy-button" type="button" data-copy="website-brief-prompt-3">
+                      Скопировать
+                    </button>
+                  </div>
+                  <blockquote class="brief-prompt" id="website-brief-prompt-3">
+                    <p>
+                      Проверь, что сайт корректно работает на всех основных
+                      экранах: <mark>телефон / планшет / ноутбук / большой монитор</mark>.
+                      Если элементы разъезжаются, исправь адаптивность, отступы,
+                      меню, формы и кнопки.
+                    </p>
+                    <p>
+                      Если сайт получился похожим на черновик или шаблон, доработай
+                      его как готовую страницу для реального запуска: сильный
+                      первый экран, понятный оффер, заметная кнопка действия,
+                      аккуратные блоки и читаемая мобильная версия.
+                    </p>
+                    <p>
+                      <b>Дизайн и UX.</b> Стиль:
+                      <mark>[минималистичный / премиальный / яркий / экспертный]</mark>,
+                      цвета <mark>[палитра]</mark>, референсы
+                      <mark>[ссылки или описание]</mark>. Сделай крупные заголовки,
+                      удобные формы, понятные CTA‑кнопки и визуальную иерархию.
+                    </p>
+                    <p>
+                      <b>SEO и техническая база.</b> Добавь title, description,
+                      корректные заголовки, alt для изображений, favicon и базовую
+                      подготовку к аналитике. Не оставляй неработающих кнопок и
+                      демонстрационных заглушек в основном сценарии.
+                    </p>
+                    <p>
+                      В финале подготовь проект для GitHub и хостинга
+                      <mark>[DigitalOcean / TimeWeb Cloud / другой доступный хостинг]</mark>,
+                      добавь понятный README и кратко напиши: что реализовано,
+                      как запустить сайт, куда уходят заявки и что логично добавить
+                      во второй версии.
+                    </p>
+                  </blockquote>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="brief-panel" id="brief-ai-service" hidden>
+            <aside class="brief-checklist">
+              <span class="brief-kind">AI‑сервис</span>
+              <h3>Что нужно упомянуть</h3>
+              <ol>
+                <li><b>Задача:</b> что сервис должен делать с помощью ИИ</li>
+                <li><b>Входные данные:</b> текст, файл, анкета, ссылка, фото</li>
+                <li><b>Результат:</b> что пользователь получает на выходе</li>
+                <li><b>Пользователи:</b> гость, клиент, админ, эксперт</li>
+                <li><b>Ограничения:</b> лимиты, история запросов, платный доступ</li>
+                <li><b>Хранилище:</b> где лежат пользователи, запросы и результаты</li>
+                <li><b>AI:</b> какой тип модели нужен и как формируется промпт</li>
+                <li><b>Безопасность:</b> какие данные нельзя отправлять в AI</li>
+              </ol>
+              <p class="brief-tip">
+                AI‑сервис — это не просто “чат”. Важно описать путь: что человек
+                вводит, что ИИ обрабатывает и какой готовый результат отдаёт.
+              </p>
+            </aside>
+
+            <div class="prompt-template">
+              <div class="template-header">
+                <div>
+                  <span>Как лучше писать</span>
+                  <h3>Сначала интерфейс и логика, потом AI‑подключение</h3>
+                </div>
+              </div>
+
+              <div class="prompt-parts">
+                <article class="prompt-part">
+                  <div class="prompt-part-head">
+                    <span>Запрос 01</span>
+                    <h4>Первая версия AI‑сервиса</h4>
+                    <button class="copy-button" type="button" data-copy="ai-brief-prompt-1">
+                      Скопировать
+                    </button>
+                  </div>
+                  <blockquote class="brief-prompt" id="ai-brief-prompt-1">
+                    <p>
+                      <b>Ты — продуктовый дизайнер и full-stack разработчик.</b>
+                      Создай AI‑сервис <mark>[название / идея]</mark>, который
+                      помогает <mark>[кому]</mark> получить
+                      <mark>[конкретный результат]</mark>.
+                    </p>
+                    <p>
+                      Пользователь вводит <mark>[текст / файл / ссылку / ответы анкеты]</mark>,
+                      нажимает кнопку, а сервис возвращает
+                      <mark>[план / анализ / текст / подборку / отчёт / рекомендации]</mark>.
+                    </p>
+                    <p>
+                      Сначала сделай рабочий интерфейс: главный экран, форму
+                      ввода, экран результата, историю запросов и понятные
+                      состояния загрузки / ошибки.
+                    </p>
+                  </blockquote>
+                </article>
+
+                <article class="prompt-part">
+                  <div class="prompt-part-head">
+                    <span>Запрос 02</span>
+                    <h4>AI‑логика, данные, доступ и интеграции</h4>
+                    <button class="copy-button" type="button" data-copy="ai-brief-prompt-2">
+                      Скопировать
+                    </button>
+                  </div>
+                  <div class="prompt-optional-note">
+                    <b>Этот запрос можно оставить на потом.</b> Он нужен, если
+                    вы уже готовы подключать AI API, оплату, CRM, базу данных,
+                    личный кабинет или хранение истории запросов. Если сейчас
+                    хочется просто собрать красивую первую версию сервиса —
+                    переходите к запросу 03, а интеграции добавите позже.
+                  </div>
+                  <blockquote class="brief-prompt" id="ai-brief-prompt-2">
+                    <p>
+                      Теперь добавь логику данных, доступа и AI‑обработки. Опиши,
+                      как сервис понимает, кто зашёл: через
+                      <mark>[email / телефон / Telegram / Google‑аккаунт / логин и пароль / SSO]</mark>.
+                    </p>
+                    <p>
+                      <b>AI‑логика:</b> сформируй системный промпт для сервиса:
+                      какую роль выполняет AI, какой формат ответа нужен, какие
+                      ограничения соблюдать, чего не делать и как проверять качество
+                      результата.
+                    </p>
+                    <p>
+                      <b>Данные пользователя:</b> сохраняй пользователя, запрос,
+                      дату, статус обработки и результат в
+                      <mark>[базе данных / CRM / Google Sheets для теста]</mark>.
+                      Если нужен личный кабинет, показывай человеку историю только
+                      его запросов и результатов.
+                    </p>
+                    <p>
+                      <b>API простыми словами:</b> API — это “мостик” между
+                      AI‑сервисом и внешними системами. Попроси Codex подключить
+                      <mark>[AI API / CRM / оплату / рассылки / онлайн‑школу / базу данных]</mark>,
+                      чтобы сервис отправлял запросы в AI, сохранял результаты,
+                      создавал карточки клиентов или открывал доступ после оплаты.
+                    </p>
+                    <p>
+                      <b>Безопасность:</b> не храни AI API‑ключи в JavaScript.
+                      Вынеси их на backend или в переменные окружения. Если
+                      реальный AI API пока не подключён, сделай mock‑версию и
+                      напиши, какие ключи понадобятся во второй версии.
+                    </p>
+                    <p>
+                      <b>Оплата и лимиты:</b> если сервис платный, добавь тарифы,
+                      бесплатный лимит <mark>[например, 3 запроса]</mark> и связь
+                      с платёжной системой
+                      <mark>[ЮKassa / Robokassa / CloudPayments / Stripe]</mark>.
+                    </p>
+                  </blockquote>
+                </article>
+
+                <article class="prompt-part">
+                  <div class="prompt-part-head">
+                    <span>Запрос 03</span>
+                    <h4>Интерфейс, UX, безопасность и запуск</h4>
+                    <button class="copy-button" type="button" data-copy="ai-brief-prompt-3">
+                      Скопировать
+                    </button>
+                  </div>
+                  <blockquote class="brief-prompt" id="ai-brief-prompt-3">
+                    <p>
+                      Проверь, что AI‑сервис выглядит как готовый продукт, а не
+                      просто поле ввода. Нужны: понятная главная страница, форма
+                      запроса, состояние “идёт обработка”, экран результата,
+                      история запросов и понятные ошибки.
+                    </p>
+                    <p>
+                      Если интерфейс получился слишком сложным, упрости основной
+                      путь: пользователь вводит данные → нажимает кнопку →
+                      получает результат → может сохранить, скопировать или
+                      отправить его себе.
+                    </p>
+                    <p>
+                      <b>Дизайн и UX.</b> Стиль:
+                      <mark>[современный / минималистичный / технологичный / премиальный]</mark>.
+                      Цвета: <mark>[палитра]</mark>. Референсы:
+                      <mark>[ссылки или описание]</mark>. Сделай крупные кнопки,
+                      читаемый результат и аккуратные состояния загрузки.
+                    </p>
+                    <p>
+                      <b>Безопасность и данные:</b> отдельно напиши, какие данные
+                      пользователя сохраняются, где они хранятся, можно ли удалить
+                      историю и какие данные нельзя отправлять в AI без согласия.
+                    </p>
+                    <p>
+                      В финале подготовь проект для GitHub и хостинга
+                      <mark>[DigitalOcean / TimeWeb Cloud / другой доступный хостинг]</mark>,
+                      добавь README и кратко напиши: что реализовано, как запустить
+                      сервис, какие переменные окружения нужны и что логично
+                      добавить во второй версии.
+                    </p>
+                  </blockquote>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="brief-bottom-line">
+            <span>Совет</span>
+            <p>
+              Не бойтесь спрашивать Codex советы и инструкции. Например:
+              <strong>«Какую CRM‑систему ты бы посоветовал использовать в России,
+              чтобы потом подключить её к моему сайту?»</strong> или
+              <strong>«Дай пошаговую инструкцию, как подключить оплату»</strong>.
+              Задавайте вопросы и следуйте инструкциям, которые Codex будет
+              давать по вашему проекту.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section auth-section" id="auth">
+        <div class="shell">
+          <div class="section-heading">
+            <span class="section-number">06</span>
+            <p>Авторизация пользователей</p>
+          </div>
+
+          <div class="auth-intro">
+            <h2>Как система<br /><span>понимает, кто вошёл?</span></h2>
+            <p>
+              Авторизация отвечает на два вопроса: <strong>кто вошёл</strong> и
+              <strong>что этому человеку можно показывать</strong>. Для Mini App,
+              сайта и AI‑сервиса логика немного разная, но почти всегда нужны:
+              форма входа, backend, место хранения данных и правила доступа.
+            </p>
+          </div>
+
+          <div class="brief-tabs auth-tabs" role="tablist" aria-label="Авторизация по типу проекта">
+            <button class="brief-tab is-active" type="button" role="tab" aria-selected="true" data-auth-tab="auth-miniapp">
+              <span>01</span> Telegram Mini App
+            </button>
+            <button class="brief-tab" type="button" role="tab" aria-selected="false" data-auth-tab="auth-website">
+              <span>02</span> Сайт
+            </button>
+            <button class="brief-tab" type="button" role="tab" aria-selected="false" data-auth-tab="auth-ai-service">
+              <span>03</span> AI‑сервис
+            </button>
+          </div>
+
+          <div class="auth-panel" id="auth-miniapp">
+
+          <div class="auth-options">
+            <div class="auth-options-title">
+              <span>Варианты</span>
+              <h3>Как подтвердить личность</h3>
+            </div>
+            <div class="auth-option-grid">
+              <article>
+                <span class="auth-option-number">01</span>
+                <h4>Telegram ID</h4>
+                <p>
+                  Пользователь открывает Mini App и входит автоматически.
+                  Подходит для магазинов, клубов и открытых сервисов.
+                </p>
+                <b>Базовый вариант</b>
+              </article>
+              <article class="recommended-auth">
+                <span class="auth-option-number">02</span>
+                <h4>Внутренний ID + привязка</h4>
+                <p>
+                  При первом входе сотрудник вводит номер и одноразовый код.
+                  После проверки система сохраняет его Telegram ID.
+                </p>
+                <b>Рекомендуем сотрудникам</b>
+              </article>
+              <article>
+                <span class="auth-option-number">03</span>
+                <h4>Корпоративная почта / SSO</h4>
+                <p>
+                  Одноразовый код приходит на рабочую почту. Корпоративный SSO
+                  при необходимости открывается во внешнем браузере.
+                </p>
+                <b>Для компаний</b>
+              </article>
+              <article>
+                <span class="auth-option-number">04</span>
+                <h4>Номер телефона</h4>
+                <p>
+                  Пользователь добровольно делится контактом через бота или
+                  подтверждает телефон одноразовым кодом.
+                </p>
+                <b>Дополнительная проверка</b>
+              </article>
+            </div>
+          </div>
+
+          <div class="auth-scenarios">
+            <article class="auth-scenario employee-auth">
+              <div class="scenario-head">
+                <span>Сценарий 01</span>
+                <h3>Приложение для сотрудников</h3>
+              </div>
+              <div class="scenario-steps">
+                <div>
+                  <span>1</span>
+                  <p>
+                    В CRM, базе или закрытой Google Таблице заранее есть
+                    сотрудник: внутренний ID, имя, должность, роль и статус.
+                  </p>
+                </div>
+                <div>
+                  <span>2</span>
+                  <p>
+                    При первом входе он вводит внутренний номер и
+                    <strong>одноразовый код</strong> из письма или приглашения.
+                  </p>
+                </div>
+                <div>
+                  <span>3</span>
+                  <p>
+                    Backend проверяет данные и привязывает к карточке
+                    проверенный числовой Telegram ID.
+                  </p>
+                </div>
+                <div>
+                  <span>4</span>
+                  <p>
+                    При следующих входах кабинет открывается автоматически, а
+                    информация загружается по роли сотрудника.
+                  </p>
+                </div>
+              </div>
+              <div class="scenario-warning">
+                <b>Не делаем:</b> публичный список внутренних номеров, где
+                можно выбрать любого сотрудника. Знание номера само по себе не
+                доказывает личность.
+              </div>
+            </article>
+
+            <div class="sheets-example">
+              <div class="sheets-example-copy">
+                <span>Пример</span>
+                <h3>Google Sheets может остаться вашей базой</h3>
+                <p>
+                  Если у клиента уже есть Google Таблица, не обязательно сразу
+                  переносить всё в сложную CRM. В таблице можно хранить ID
+                  сотрудника, код активации, роль, статус, товары, заявки или
+                  любые другие рабочие данные.
+                </p>
+                <p>
+                  Сотрудник открывает Mini App, вводит свой номер и код. Backend
+                  проверяет эти данные в таблице, привязывает доступ к его
+                  Telegram ID и показывает только ту информацию, которая относится
+                  к этому сотруднику.
+                </p>
+                <div class="sheets-example-rule">
+                  <b>Главная идея:</b> вы продолжаете обновлять Google Sheets, а
+                  приложение автоматически подтягивает свежие данные для каждого
+                  сотрудника, товара или заявки.
+                </div>
+                <div class="scenario-warning safe">
+                  <b>Про данные:</b> Google Sheets — хороший быстрый вариант,
+                  чтобы протестировать идею и показать клиенту MVP. Но если в
+                  проекте есть персональные данные, в идеале лучше использовать
+                  защищённую CRM, базу данных или сервис, где можно настроить
+                  права доступа, журнал действий и хранение данных по правилам.
+                </div>
+                <div class="scenario-warning">
+                  <b>Важно по РФ:</b> если вы работаете с персональными данными
+                  пользователей из России, учитывайте требования Федерального
+                  закона № 152‑ФЗ «О персональных данных». Для хранения и учета
+                  данных рекомендуется использовать проверенные CRM‑системы и
+                  сервисы, соответствующие требованиям российского законодательства,
+                  а не хранить персональные данные напрямую в зарубежных сервисах.
+                </div>
+              </div>
+              <div class="sheets-example-visuals">
+                <figure class="sheet-shot">
+                  <img
+                    src="assets/google-sheets-employee-access.png"
+                    alt="Пример Google Sheets с employee_id и activation_pin"
+                    loading="lazy"
+                  />
+                  <figcaption>В таблице заранее есть ID сотрудника и код активации</figcaption>
+                </figure>
+                <figure class="app-shot">
+                  <img
+                    src="assets/employee-login-miniapp.png"
+                    alt="Экран входа сотрудника в Telegram Mini App"
+                    loading="lazy"
+                  />
+                  <figcaption>В приложении сотрудник вводит свои данные и попадает в личный кабинет</figcaption>
+                </figure>
+              </div>
+
+              <div class="sheets-live-sync" id="sheets-sync">
+                <div class="sheets-live-sync-copy">
+                  <span>Важно настроить отдельно</span>
+                  <h3>Чтобы изменения из таблицы появлялись в приложении</h3>
+                  <p>
+                    Само по себе приложение не узнаёт, что вы изменили данные
+                    в Google Sheets. Таблицу и Mini App нужно один раз связать
+                    через Google Apps Script или backend.
+                  </p>
+                  <p>
+                    После настройки вы продолжаете работать в привычной
+                    таблице: меняете должность, смены, документы, товары или
+                    статусы — а приложение получает актуальную информацию при
+                    открытии, обновлении или автоматически в режиме реального
+                    времени.
+                  </p>
+                  <div class="sheets-codex-prompt">
+                    <b>Что написать Codex:</b>
+                    <p>
+                      «Помоги связать мою Google Таблицу с Telegram Mini App.
+                      Дай подробную пошаговую инструкцию и настрой приложение
+                      так, чтобы изменения из таблицы автоматически появлялись
+                      в приложении в режиме реального времени».
+                    </p>
+                  </div>
+                  <p class="sheets-live-note">
+                    Codex уточнит структуру таблицы, подскажет, какие доступы
+                    нужны, поможет создать связку и объяснит, куда добавить
+                    полученный код.
+                  </p>
+                </div>
+                <figure class="sheets-sync-shot">
+                  <img
+                    src="assets/google-sheets-live-sync-redacted.png"
+                    alt="Пример инструкции Codex по подключению Google Sheets к приложению"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Пример: Codex объясняет, как связать таблицу и приложение,
+                    чтобы данные обновлялись автоматически
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <article class="auth-scenario customer-auth">
+              <div class="scenario-head">
+                <span>Сценарий 02</span>
+                <h3>Магазин или открытый сервис</h3>
+              </div>
+              <div class="scenario-steps">
+                <div>
+                  <span>1</span>
+                  <p>
+                    Нужно создать форму регистрации: пользователь вводит email,
+                    телефон или открывает Mini App через Telegram.
+                  </p>
+                </div>
+                <div>
+                  <span>2</span>
+                  <p>
+                    Backend создаёт нового пользователя: сохраняет email,
+                    телефон, Telegram ID, дату регистрации и статус клиента.
+                  </p>
+                </div>
+                <div>
+                  <span>3</span>
+                  <p>
+                    Эти данные можно автоматически отправлять в Google Таблицу,
+                    CRM или базу данных — чтобы менеджер сразу видел нового
+                    пользователя.
+                  </p>
+                </div>
+                <div>
+                  <span>4</span>
+                  <p>
+                    Если нужен код подтверждения, его отправляет backend через
+                    email-сервис, SMS-сервис или Telegram-бота. Пользователь
+                    вводит код и получает доступ.
+                  </p>
+                </div>
+              </div>
+              <div class="scenario-warning safe">
+                <b>Важно:</b> Google Таблица или CRM могут быть “приёмником”
+                данных. Например: человек зарегистрировался по email — его email,
+                имя, телефон, дата регистрации и источник сразу попали в таблицу
+                или карточку CRM.
+              </div>
+            </article>
+
+            <article class="auth-scenario school-auth">
+              <div class="scenario-head">
+                <span>Сценарий 03</span>
+                <h3>Онлайн-школа или закрытый клуб</h3>
+              </div>
+              <div class="scenario-steps">
+                <div>
+                  <span>1</span>
+                  <p>
+                    Ученик получает доступ после оплаты, от преподавателя или
+                    от администратора: код, ссылку-приглашение или QR-код.
+                  </p>
+                </div>
+                <div>
+                  <span>2</span>
+                  <p>
+                    При первом входе приложение проверяет код и привязывает
+                    доступ к Telegram ID конкретного ученика.
+                  </p>
+                </div>
+                <div>
+                  <span>3</span>
+                  <p>
+                    Дальше ученик видит только свои уроки, материалы, домашние
+                    задания, прогресс или закрытые разделы клуба.
+                  </p>
+                </div>
+                <div>
+                  <span>4</span>
+                  <p>
+                    Если оплата проходит в GetCourse, Robokassa, Stripe или
+                    другой системе, приложение может открывать готовую ссылку
+                    оплаты, а доступ выдавать после подтверждения.
+                  </p>
+                </div>
+              </div>
+              <div class="scenario-warning safe">
+                <b>Самый простой старт:</b> кнопка «Оплатить» ведёт на готовую
+                страницу оплаты, а код доступа выдаётся после покупки.
+              </div>
+            </article>
+          </div>
+
+          </div>
+
+          <div class="auth-panel" id="auth-website" hidden>
+            <div class="auth-scenarios">
+              <article class="auth-scenario customer-auth">
+                <div class="scenario-head">
+                  <span>Сайт</span>
+                  <h3>Как возможна авторизация на сайте</h3>
+                </div>
+                <div class="scenario-steps">
+                  <div>
+                    <span>1</span>
+                    <p>
+                      <b>Простой сайт без кабинета:</b> авторизация не нужна.
+                      Пользователь оставляет заявку, нажимает кнопку оплаты или
+                      пишет в Telegram. Данные из формы уходят в CRM, Google
+                      Sheets, email или базу данных.
+                    </p>
+                  </div>
+                  <div>
+                    <span>2</span>
+                    <p>
+                      <b>Сайт с личным кабинетом:</b> пользователь регистрируется
+                      по email, телефону или через соцсети. Backend создаёт
+                      аккаунт и хранит профиль в базе данных или CRM.
+                    </p>
+                  </div>
+                  <div>
+                    <span>3</span>
+                    <p>
+                      <b>Коды подтверждения:</b> их отправляет не сам сайт, а
+                      подключённый сервис: email‑сервис, SMS‑провайдер,
+                      Telegram‑бот или готовая auth‑платформа.
+                    </p>
+                  </div>
+                  <div>
+                    <span>4</span>
+                    <p>
+                      <b>Куда уходят данные:</b> email, телефон, имя, дата
+                      регистрации, заявки и покупки сохраняются в базе данных,
+                      CRM или таблице для теста. Для рабочего продукта лучше
+                      использовать базу данных или CRM.
+                    </p>
+                  </div>
+                </div>
+                <div class="scenario-warning safe">
+                  <b>Что нужно создать или подключить:</b> backend для обработки
+                  регистрации, базу данных или CRM для хранения пользователей,
+                  сервис отправки кодов, а при оплате — платёжную систему.
+                </div>
+              </article>
+
+              <div class="integration-guide">
+                <div class="data-storage-title">
+                  <span>Запрос в Codex</span>
+                  <h3>Как попросить авторизацию для сайта</h3>
+                </div>
+                <div class="integration-cards">
+                  <article>
+                    <h4>Email + пароль</h4>
+                    <p>
+                      «Добавь регистрацию по email и паролю, вход, выход,
+                      восстановление пароля и личный кабинет. Храни пользователей
+                      в базе данных, пароли — только в зашифрованном виде».
+                    </p>
+                  </article>
+                  <article>
+                    <h4>Телефон + код</h4>
+                    <p>
+                      «Сделай вход по номеру телефона и одноразовому коду.
+                      Объясни, какой SMS‑сервис нужно подключить и где хранить
+                      подтверждённый номер».
+                    </p>
+                  </article>
+                  <article>
+                    <h4>Заявки без кабинета</h4>
+                    <p>
+                      «Сделай форму заявки и отправляй данные в CRM или Google
+                      Sheets. Укажи, какие поля сохраняются и как менеджер их
+                      увидит».
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth-panel" id="auth-ai-service" hidden>
+            <div class="auth-scenarios">
+              <article class="auth-scenario school-auth">
+                <div class="scenario-head">
+                  <span>AI‑сервис</span>
+                  <h3>Как авторизуется пользователь в AI‑сервисе</h3>
+                </div>
+                <div class="scenario-steps">
+                  <div>
+                    <span>1</span>
+                    <p>
+                      <b>Гостевой режим:</b> человек может сделать 1–3 тестовых
+                      запроса без регистрации. Сервис хранит только временную
+                      сессию в браузере или на backend.
+                    </p>
+                  </div>
+                  <div>
+                    <span>2</span>
+                    <p>
+                      <b>Личный кабинет:</b> пользователь входит по email,
+                      телефону, Telegram или Google‑аккаунту. Так можно хранить
+                      историю запросов, результаты, тариф и лимиты.
+                    </p>
+                  </div>
+                  <div>
+                    <span>3</span>
+                    <p>
+                      <b>Где всё хранится:</b> сервису нужно место, куда он будет
+                      записывать пользователей и их результаты. Например: кто
+                      зарегистрировался, какой запрос отправил, какой ответ
+                      получил, оплатил ли доступ. Для теста можно использовать
+                      Google Sheets, но для нормального проекта лучше CRM или
+                      база данных.
+                    </p>
+                  </div>
+                  <div>
+                    <span>4</span>
+                    <p>
+                      <b>Как работает AI:</b> человек вводит текст на сайте, а
+                      сайт отправляет его в AI‑сервис и получает готовый ответ.
+                      Для этого нужен “ключ доступа” к AI. Его нельзя оставлять
+                      прямо в коде сайта, потому что его могут увидеть другие
+                      люди. Поэтому ключ хранится в закрытой части проекта —
+                      на backend.
+                    </p>
+                  </div>
+                </div>
+                <div class="scenario-warning safe">
+                  <b>Что нужно создать или подключить:</b> backend, базу данных,
+                  AI API, систему лимитов, оплату при платном доступе и понятную
+                  политику хранения пользовательских запросов.
+                </div>
+                <div class="scenario-warning">
+                  <b>Аккуратно с персональными данными:</b> если пользователь
+                  вводит документы, телефоны, медицинские, финансовые или другие
+                  чувствительные данные, заранее решите, что можно отправлять в
+                  AI‑сервис, что нужно обезличивать и где хранить результаты.
+                </div>
+              </article>
+
+              <div class="integration-guide">
+                <div class="data-storage-title">
+                  <span>Запрос в Codex</span>
+                  <h3>Как попросить авторизацию для AI‑сервиса</h3>
+                </div>
+                <div class="integration-cards">
+                  <article>
+                    <h4>История запросов</h4>
+                    <p>
+                      «Сделай личный кабинет: пользователь видит только свои
+                      AI‑запросы, результаты, дату создания и статус обработки».
+                    </p>
+                  </article>
+                  <article>
+                    <h4>Лимиты</h4>
+                    <p>
+                      «Добавь бесплатный лимит и платные тарифы. После оплаты
+                      увеличивай количество доступных запросов у пользователя».
+                    </p>
+                  </article>
+                  <article>
+                    <h4>Безопасное хранение</h4>
+                    <p>
+                      «Не храни AI‑ключи на frontend. Сделай backend‑endpoint,
+                      который принимает запрос пользователя и безопасно обращается
+                      к AI API».
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="integration-guide">
+            <div class="data-storage-title">
+              <span>Интеграции простыми словами</span>
+              <h3>Что просить у Codex отдельно</h3>
+            </div>
+            <div class="integration-cards">
+              <article>
+                <h4>Оплата</h4>
+                <p>
+                  «Добавь кнопку оплаты и подключи готовую ссылку на товар из
+                  Robokassa / Stripe / ЮKassa / CloudPayments / GetCourse».
+                </p>
+              </article>
+              <article>
+                <h4>API</h4>
+                <p>
+                  «Подключи мой сервис по API: отправляй заявки в CRM, забирай
+                  статусы заказов или подтягивай уроки из онлайн-школы».
+                </p>
+              </article>
+              <article>
+                <h4>Хранилище</h4>
+                <p>
+                  «Сохраняй пользователей, заявки и заказы в Google Sheets,
+                  CRM или базе данных — выбери самый простой вариант для MVP».
+                </p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section hosting-section" id="hosting">
+        <div class="shell">
+          <div class="section-heading">
+            <span class="section-number">07</span>
+            <p>Публикуем проект и подключаем Telegram</p>
+          </div>
+
+          <div class="hosting-intro">
+            <h2>Хостинг:<br />от файлов <span>до Telegram-бота</span></h2>
+            <p>
+              После создания Mini App нам нужно не просто получить код, а
+              опубликовать его в интернете и подключить к Telegram. Идём по
+              цепочке: <strong>Codex → GitHub → хостинг → BotFather</strong>.
+            </p>
+          </div>
+
+          <div class="hosting-roadmap" aria-label="Пошаговая схема публикации Mini App">
+            <article class="hosting-roadmap-card codex-files-step">
+              <span class="hosting-step">Шаг 01</span>
+              <div class="hosting-card-copy">
+                <h3>Попросите Codex подготовить файлы</h3>
+                <p>
+                  В конце работы напишите Codex: «Подготовь все файлы проекта
+                  для загрузки на GitHub». В ответ вам нужен архив или папка,
+                  где лежат <code>index.html</code>, <code>styles.css</code>,
+                  <code>script.js</code>, <code>README.md</code>, <code>.nojekyll</code>
+                  и папка <code>assets</code> с картинками.
+                </p>
+                <div class="hosting-prompt-box">
+                  <b>Запрос в Codex:</b>
+                  <span>Подготовь актуальный архив для загрузки на GitHub и перечисли, какие файлы внутри.</span>
+                </div>
+              </div>
+              <figure class="hosting-files-preview">
+                <img src="assets/hosting-files-codex.png" alt="Пример архива с файлами для загрузки на GitHub" loading="lazy" />
+                <figcaption>Пример: Codex прислал архив с файлами проекта</figcaption>
+              </figure>
+            </article>
+
+            <article class="hosting-roadmap-card compact-hosting-step featured-hosting-step">
+              <span class="hosting-step">Шаг 02</span>
+              <div>
+                <h3>Загрузите проект на GitHub и подключите хостинг</h3>
+                <p>
+                  GitHub — место, где лежит код проекта. Создаём репозиторий,
+                  загружаем туда файлы из архива, а затем подключаем этот
+                  репозиторий к хостингу: например, DigitalOcean, TimeWeb Cloud
+                  или другому доступному сервису для публикации сайта. Хостинг
+                  публикует проект и выдаёт готовую ссылку, которую потом можно
+                  вставить в Telegram или открыть как обычный сайт.
+                </p>
+                <div class="live-link-demo">
+                  <span>После деплоя у вас появится ссылка</span>
+                  <b>https://your-project.hosting.app</b>
+                </div>
+                <figure class="hosting-video-wrap">
+                  <video
+                    class="hosting-video"
+                    controls
+                    playsinline
+                    preload="metadata"
+                  >
+                    <source
+                      src="assets/github-digitalocean-hosting.mp4"
+                      type="video/mp4"
+                    />
+                    Ваш браузер не поддерживает воспроизведение видео.
+                  </video>
+                  <figcaption>
+                    Как загрузить файлы на GitHub, подключить хостинг и получить
+                    готовую ссылку
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article class="hosting-roadmap-card telegram-step">
+              <div class="telegram-info">
+                <span class="hosting-step">Шаг 03</span>
+                <figure class="botfather-preview">
+                  <img src="assets/botfather.jpg" alt="BotFather в Telegram" loading="lazy" />
+                  <figcaption>Для подключения Mini App понадобится бот @BotFather</figcaption>
+                </figure>
+                <div class="telegram-step-copy">
+                  <h3>Подключите приложение к Telegram</h3>
+                  <p>
+                    Когда ссылка уже есть, переходим в Telegram и создаём бота
+                    через <strong>@BotFather</strong>. Именно туда мы передадим
+                    ссылку на Mini App, чтобы приложение открывалось внутри Telegram.
+                  </p>
+                  <ol>
+                    <li>Открываем Telegram и находим <strong>@BotFather</strong>.</li>
+                    <li>Создаём нового бота или выбираем уже созданного.</li>
+                    <li class="digitalocean-link-step">
+                      <strong>Вставляем скопированную ссылку с хостинга из шага 02</strong>
+                      как ссылку на Web App / Mini App. Это может быть ссылка
+                      DigitalOcean, TimeWeb Cloud или другого сервиса, где
+                      опубликован ваш проект.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <figure class="hosting-video-wrap telegram-video-wrap">
+                <video
+                  class="hosting-video"
+                  controls
+                  playsinline
+                  preload="metadata"
+                >
+                  <source
+                    src="assets/telegram-botfather-connection.mp4"
+                    type="video/mp4"
+                  />
+                  Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+                <figcaption>
+                  Как подключить Telegram Mini App через BotFather
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-offer" id="next-step">
+        <div class="shell">
+          <div class="final-offer-head">
+            <span>Следующий шаг</span>
+            <h2>Хотите продолжить<br /><em>и создать свой проект?</em></h2>
+            <p>
+              Выберите личную работу со мной или оставьте заявку на следующий
+              поток онлайн-курса.
+            </p>
+          </div>
+
+          <div class="offer-grid">
+            <article class="offer-card personal-offer">
+              <span class="offer-label">Личная работа · 3 занятия</span>
+              <h3>Создаём ваш проект вместе</h3>
+              <p class="offer-lead">
+                Три персональных занятия — чтобы перейти от идеи к работающему
+                результату.
+              </p>
+              <ul class="offer-benefits">
+                <li>Создадим сайт, приложение или AI-сервис с нуля.</li>
+                <li>
+                  Доработаем ваш проект: разберём структуру, исправим ошибки и
+                  настроим ключевые функции.
+                </li>
+                <li>
+                  По вашему запросу изучим <strong>Claude Code</strong>, его
+                  внутренние функции и приложения.
+                </li>
+              </ul>
+
+              <div class="offer-price">
+                <span>25 990 ₽</span>
+                <strong>17 990 ₽</strong>
+              </div>
+              <div class="offer-saving">Специальная цена на пакет из 3 занятий</div>
+
+              <a
+                class="offer-button offer-button-light"
+                href="https://t.me/efimova_polina"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Написать Полине в Telegram ↗
+              </a>
+            </article>
+
+            <article class="offer-card course-offer">
+              <span class="offer-label">Следующий поток</span>
+              <h3>Онлайн-курс по вайбкодингу</h3>
+              <p>
+                Текущий поток уже стартовал и полностью заполнен. Если вы
+                хотите присоединиться к следующему набору, оставьте заявку —
+                я сообщу вам, когда откроется регистрация.
+              </p>
+
+              <div class="promo-box">
+                <span>Сохраните промокод</span>
+                <strong>VIBE10</strong>
+                <p>Он даст скидку 10% на следующий поток онлайн-курса.</p>
+              </div>
+
+              <a
+                class="offer-button offer-button-blue"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfyQD_KaZ0d2WkT6Wv5zjNFmFtI4LhfazPVxW7hVR6qQxATQA/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Оставить заявку на курс ↗
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell">
+        <span>VIBE/CODE · ИНТЕНСИВ</span>
+        <a href="#start">Наверх ↑</a>
+      </div>
+    </footer>
+    <script src="./script.js?v=20260702-6"></script>
+  </body>
+</html>
