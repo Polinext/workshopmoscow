@@ -1772,6 +1772,33 @@ blockquote {
   box-shadow: 0 22px 60px rgba(36, 80, 255, 0.12);
 }
 
+.video-placeholder-card {
+  display: grid;
+  gap: 12px;
+  min-height: 260px;
+  align-content: center;
+  padding: 34px;
+  border: 1px dashed rgba(49, 94, 245, 0.36);
+  border-radius: 22px;
+  background: #eef3ff;
+  color: #4c5264;
+  box-shadow: 0 22px 60px rgba(36, 80, 255, 0.08);
+}
+
+.video-placeholder-card span {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.video-placeholder-card p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
 .hosting-video-wrap figcaption {
   margin-top: 12px;
   color: var(--muted);

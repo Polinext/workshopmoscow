@@ -1,10 +1,14 @@
 {
-  "name": "employee-cabinet-mini-app",
-  "private": true,
+  "name": "web-coding-intensive",
   "version": "1.0.0",
-  "description": "Telegram Mini App demo for an employee personal cabinet",
+  "private": true,
+  "description": "Static website for a web coding intensive lesson.",
   "scripts": {
-    "dev": "node server.mjs",
-    "preview": "node server.mjs"
+    "start": "npx serve .",
+    "build": "echo \"Static site: no build step required\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.4"
   }
 }
